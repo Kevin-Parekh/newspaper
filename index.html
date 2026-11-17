@@ -35,13 +35,13 @@ nav{position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:3px so
 nav a{font-family:Arial,"Noto Serif Gujarati",sans-serif;font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.4px;text-decoration:none;padding:11px 11px;border-bottom:4px solid transparent;margin-bottom:-3px}
 nav a:hover{color:var(--red)}
 nav a.on{color:var(--red);border-bottom-color:var(--red)}
-nav a.hl-y,nav a.hl-w{color:#fff;margin:6px 0 6px 8px;padding:6px 12px;border-radius:4px;border-bottom:0;text-transform:none;font-size:14.5px;letter-spacing:0}
-nav a.hl-y{background:#c4161c}nav a.hl-w{background:#0d5c63}
-nav a.hl-y:hover,nav a.hl-w:hover{color:#fff;filter:brightness(1.15)}
-nav a.hl-y.on,nav a.hl-w.on{background:#161616;color:#ffd24a;box-shadow:0 0 0 2px #ffd24a inset}
-.promo{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}
+nav a.hl-p,nav a.hl-y,nav a.hl-w{color:#fff;margin:6px 0 6px 8px;padding:6px 12px;border-radius:4px;border-bottom:0;text-transform:none;font-size:14.5px;letter-spacing:0}
+nav a.hl-p{background:#5b2a86}nav a.hl-y{background:#c4161c}nav a.hl-w{background:#0d5c63}
+nav a.hl-p:hover,nav a.hl-y:hover,nav a.hl-w:hover{color:#fff;filter:brightness(1.15)}
+nav a.hl-p.on,nav a.hl-y.on,nav a.hl-w.on{background:#161616;color:#ffd24a;box-shadow:0 0 0 2px #ffd24a inset}
+.promo{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
 .promo a{display:block;color:#fff;text-decoration:none;font-family:Arial,"Noto Serif Gujarati",sans-serif;font-weight:700;font-size:17px;padding:14px 18px;border-radius:4px}
-.promo a.hl-y{background:#c4161c}.promo a.hl-w{background:#0d5c63}
+.promo a.hl-p{background:#5b2a86}.promo a.hl-y{background:#c4161c}.promo a.hl-w{background:#0d5c63}
 .ph-y h2{color:#c4161c}.ph-w h2{color:#0d5c63}
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .card{position:relative;background:#fff;border:1px solid var(--hair);border-top:5px solid #c4161c;padding:16px 16px 14px;display:flex;flex-direction:column}
@@ -53,6 +53,29 @@ nav a.hl-y.on,nav a.hl-w.on{background:#161616;color:#ffd24a;box-shadow:0 0 0 2p
 .btn{margin-top:auto;align-self:flex-start;color:#fff;text-decoration:none;font-family:Arial,"Noto Serif Gujarati",sans-serif;font-weight:700;font-size:15px;padding:8px 14px;border-radius:4px}
 .btn.by{background:#c4161c}.btn.bw{background:#0d5c63}
 .btn:hover{filter:brightness(1.15)}
+.ph-p h2{color:#5b2a86}
+.ptips{background:#f4eefa;border-left:5px solid #5b2a86;padding:14px 18px;margin-bottom:18px;font-size:19px}
+.ptips p{margin:6px 0}.ptips a{color:#5b2a86;font-weight:700}
+mark{background:#ffe066;color:#161616;padding:0 3px;border-radius:2px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;padding:12px 0 6px;scroll-margin-top:60px}
+.chip{font:700 16px Arial,"Noto Serif Gujarati",sans-serif;padding:9px 16px;border-radius:999px;border:2px solid var(--c,#5b2a86);background:#fff;color:var(--c,#5b2a86);cursor:pointer}
+.chip.on,.chip:hover{background:var(--c,#5b2a86);color:#fff}
+.psec{margin-top:26px;border-top:6px solid var(--c)}
+.ptoolhead{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center;padding:12px 0 4px}
+.ptoolhead h2{font-size:34px;margin:0;color:var(--c)}
+.ptoolhead h2 span{font:700 16px Arial,"Noto Serif Gujarati",sans-serif;color:var(--soft);margin-left:8px}
+.phow{font-size:18px;background:#fff;border:1px solid var(--hair);padding:10px 14px;margin:8px 0 6px}
+.pcat{font-size:25px;margin:22px 0 12px;padding-bottom:6px;border-bottom:2px solid var(--c)}
+.pgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.pcard{background:#fff;border:1px solid var(--hair);border-left:6px solid var(--c);padding:16px 18px;display:flex;flex-direction:column;scroll-margin-top:60px}
+.ptop{display:flex;justify-content:space-between;font:700 13px Arial,sans-serif;letter-spacing:.5px;text-transform:uppercase}
+.pid{background:var(--c);color:#fff;padding:2px 8px;border-radius:3px}.ptl{color:var(--c)}
+.pcard h4{font-family:"Playfair Display","Noto Serif Gujarati",serif;font-size:24px;line-height:1.25;margin:10px 0 8px}
+.ptext{white-space:pre-wrap;word-wrap:break-word;margin:0 0 10px;font:400 19px/1.6 Arial,"Noto Sans Gujarati","Noto Serif Gujarati",sans-serif;background:#f7f5f0;border:1px solid #e3ded2;border-radius:4px;padding:12px 14px;color:#161616}
+.pnote{font:400 16px/1.5 Arial,"Noto Serif Gujarati",sans-serif;color:#5a4a00;background:#fff8d9;padding:8px 10px;border-radius:4px;margin:0 0 10px}
+.pact{margin-top:auto;display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.copy{font:700 18px Arial,"Noto Serif Gujarati",sans-serif;background:#161616;color:#fff;border:0;border-radius:6px;padding:12px 20px;cursor:pointer;min-width:200px}
+.copy:hover{background:var(--c)}.copy.ok{background:#1e8e3e}
 main{padding-top:22px}
 .kick{font-family:Arial,"Noto Serif Gujarati",sans-serif;font-size:13px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;color:var(--red);margin:0 0 6px}
 .kick span{color:var(--soft);font-weight:400}
@@ -112,7 +135,7 @@ footer b{color:var(--ink)}
 .empty{text-align:center;padding:40px 0;color:var(--soft)}
 @media (max-width:1000px){.front{grid-template-columns:1fr}.sub{display:grid;grid-template-columns:1fr 1fr;gap:18px 28px;border-top:1px solid var(--rule);margin-top:16px;padding-top:16px}
 .sub h3{font-size:25px}
-.rail{border-left:0;padding-left:0;border-top:3px solid var(--rule);padding-top:16px;margin-top:8px}.row4{grid-template-columns:1fr 1fr;gap:18px 0}.row4 .story:nth-child(odd){padding-left:0;border-left:0}.cols{columns:2}.ear{display:none}.cards{grid-template-columns:1fr 1fr}}
+.rail{border-left:0;padding-left:0;border-top:3px solid var(--rule);padding-top:16px;margin-top:8px}.row4{grid-template-columns:1fr 1fr;gap:18px 0}.row4 .story:nth-child(odd){padding-left:0;border-left:0}.cols{columns:2}.ear{display:none}.cards{grid-template-columns:1fr 1fr}.pgrid{grid-template-columns:1fr}.promo{grid-template-columns:1fr}}
 @media (max-width:640px){body{font-size:18px}.sheet{padding:0 14px 30px}.lead .body{columns:1}.sub{grid-template-columns:1fr}.cards,.promo{grid-template-columns:1fr}.row4{grid-template-columns:1fr}.row4 .story{padding:0 0 12px;border-left:0;border-bottom:1px solid var(--hair)}.cols{columns:1}nav a{padding:9px 9px;font-size:13px}.strip input{width:150px}}
 @media print{nav,.strip{display:none}.sheet{box-shadow:none}}
 </style>
@@ -554,6 +577,566 @@ var JUDGE = [
 ["Prefer teachers who explain why, not only which button to click.","ફક્ત કયું બટન દબાવવું તે નહીં, 'કેમ' સમજાવતા શિક્ષકોને પસંદ કરો."],
 ["A directory listing is not a review, and a leaderboard shows what people liked, not what is correct.","ડિરેક્ટરીમાં નામ હોવું એ રિવ્યૂ નથી, અને લીડરબોર્ડ લોકોને શું ગમ્યું તે બતાવે છે, શું સાચું છે તે નહીં."]
 ];
+/* key, name, url, colour, how EN, how GU, id prefix */
+var PTOOLS = [
+["chatgpt","ChatGPT","https://chatgpt.com","#10a37f","Open chatgpt.com and paste the prompt. When a prompt says 'Use web search', switch on search so the answer shows sources and dates. Always open the links and check them yourself.","chatgpt.com ખોલો અને પ્રૉમ્પ્ટ પેસ્ટ કરો. પ્રૉમ્પ્ટમાં 'Use web search' લખ્યું હોય ત્યારે સર્ચ ચાલુ કરો, જેથી જવાબમાં સ્રોત અને તારીખ દેખાય. લિંક જાતે ખોલીને હંમેશાં ચકાસો.","CG"],
+["gemini","Gemini","https://gemini.google.com","#1a73e8","Open gemini.google.com, choose the image option and paste the prompt. Ask for changes in the next message, for example 'make the background blue'. AI often misspells words inside images, so check all text.","gemini.google.com ખોલો, ઇમેજનો વિકલ્પ પસંદ કરો અને પ્રૉમ્પ્ટ પેસ્ટ કરો. ફેરફાર માટે આગળના મેસેજમાં લખો, જેમ કે 'બૅકગ્રાઉન્ડ વાદળી કરો'. ઇમેજની અંદરના શબ્દોમાં AI ઘણી વાર ભૂલ કરે છે, તેથી બધું લખાણ ચકાસો.","GE"],
+["claude","Claude","https://claude.ai","#c96442","Paste the prompt at claude.ai. Claude shows the website in a preview panel. Copy or download the code, save it as index.html and open it in your browser.","claude.ai પર પ્રૉમ્પ્ટ પેસ્ટ કરો. Claude વેબસાઇટ પ્રિવ્યૂ પૅનલમાં બતાવે છે. કોડ કૉપી કે ડાઉનલોડ કરો, index.html તરીકે સેવ કરો અને બ્રાઉઝરમાં ખોલો.","CL"],
+["aistudio","Google AI Studio","https://aistudio.google.com","#4285f4","Open aistudio.google.com. Use the Build section to create a working app from the prompt, or use Chat to get the code and explanation.","aistudio.google.com ખોલો. પ્રૉમ્પ્ટથી ચાલતી ઍપ બનાવવા Build વિભાગ વાપરો, અથવા કોડ અને સમજૂતી માટે Chat વાપરો.","AS"],
+["lovable","Lovable","https://lovable.dev","#e8467c","Paste the prompt in the box on lovable.dev. Lovable builds the app. Ask for changes in the chat, then click Publish to get a link you can share.","lovable.dev પરના બૉક્સમાં પ્રૉમ્પ્ટ પેસ્ટ કરો. Lovable ઍપ બનાવે છે. ફેરફાર ચૅટમાં માગો, પછી શેર કરી શકાય તેવી લિંક માટે Publish દબાવો.","LV"],
+["suno","Suno","https://suno.com","#111111","First run the matching ChatGPT lyrics prompt. In Suno choose Create, then Custom. Paste the Hindi lyrics into the Lyrics box and copy this prompt into the Style box. Generate two versions and keep the better one.","પહેલાં સંબંધિત ChatGPT ગીતના શબ્દોવાળો પ્રૉમ્પ્ટ ચલાવો. Suno માં Create પછી Custom પસંદ કરો. હિન્દી શબ્દો Lyrics બૉક્સમાં અને આ પ્રૉમ્પ્ટ Style બૉક્સમાં પેસ્ટ કરો. બે વર્ઝન બનાવો અને સારું રાખો.","SU"],
+["gamma","Gamma","https://gamma.app","#7b3fe4","In Gamma choose Create new, then Generate. Paste the prompt, choose Presentation and 10 cards, then pick a theme. You can export it as PDF or PowerPoint.","Gamma માં Create new પછી Generate પસંદ કરો. પ્રૉમ્પ્ટ પેસ્ટ કરો, Presentation અને 10 cards પસંદ કરો, પછી થીમ પસંદ કરો. PDF કે PowerPoint તરીકે એક્સપોર્ટ કરી શકાય.","GA"],
+["canva","Canva","https://www.canva.com","#00a3b4","Use Canva AI and paste the prompt, or search the templates named in the prompt (LinkedIn Background, Resume). Then replace all sample text with your own true details.","Canva AI માં પ્રૉમ્પ્ટ પેસ્ટ કરો, અથવા પ્રૉમ્પ્ટમાં લખેલા ટેમ્પ્લેટ શોધો (LinkedIn Background, Resume). પછી બધું નમૂનાનું લખાણ તમારી સાચી વિગતથી બદલો.","CA"]
+];
+
+var PCATS = {
+"cg-jon":["Find AI jobs in India: online","ભારતમાં AI નોકરી શોધો: ઑનલાઇન"],
+"cg-joff":["Find AI jobs in India: offline","ભારતમાં AI નોકરી શોધો: ઑફલાઇન"],
+"cg-web":["Web development jobs: offline","વેબ ડેવલપમેન્ટની નોકરી: ઑફલાઇન"],
+"cg-biz":["Business ideas for BCA and MCA graduates","BCA અને MCA સ્નાતકો માટે બિઝનેસ આઇડિયા"],
+"cg-lyr":["Hindi song lyrics (then make music in Suno)","હિન્દી ગીતના શબ્દો (પછી Suno માં સંગીત બનાવો)"],
+"cg-std":["Study and career helpers","અભ્યાસ અને કારકિર્દી સહાયક"],
+"ge-img":["Basic image practice","ઇમેજ બનાવવાની પાયાની પ્રૅક્ટિસ"],
+"ge-ban":["Banners and posters","બૅનર અને પોસ્ટર"],
+"ge-logo":["Logos","લોગો"],
+"ge-prod":["Product marketing images","પ્રોડક્ટ માર્કેટિંગ ઇમેજ"],
+"ge-nat":["Nature scenes","કુદરતી દૃશ્યો"],
+"cl-soc":["HTML websites on social media topics","સોશિયલ મીડિયાના વિષયો પર HTML વેબસાઇટ"],
+"cl-oth":["More single-page HTML websites","વધુ સિંગલ-પેજ HTML વેબસાઇટ"],
+"as-web":["E-commerce and business website templates","ઈ-કૉમર્સ અને બિઝનેસ વેબસાઇટ ટેમ્પ્લેટ"],
+"lv-app":["Build complete apps","સંપૂર્ણ ઍપ બનાવો"],
+"su-mus":["Music for your Hindi lyrics","તમારા હિન્દી ગીત માટે સંગીત"],
+"su-alt":["Other styles and instrumental music","અન્ય શૈલી અને વાદ્ય સંગીત"],
+"ga-ppt":["10-slide presentations","10 સ્લાઇડનાં પ્રેઝન્ટેશન"],
+"ca-li":["LinkedIn banners","LinkedIn બૅનર"],
+"ca-cv":["Resumes and cover letters","રેઝ્યૂમે અને કવર લેટર"]
+};
+
+var PROMPTS = [];
+function P(t,c,en,gu,txt,nen,ngu){ PROMPTS.push([t,c,en,gu,txt,nen||"",ngu||""]); }
+
+/* ================= CHATGPT (45) ================= */
+P("chatgpt","cg-jon","Map the AI job market in India","ભારતમાં AI નોકરીના બજારનો નકશો",
+`Use web search. I am a [BCA / MCA / B.SC IT] student from [YOUR CITY], Gujarat.
+Give me an overview of AI-related jobs in India as of this month:
+1. The 10 most common job titles for freshers (for example AI support, data annotation, prompt writing, junior ML engineer).
+2. The skills each job usually asks for.
+3. A realistic starting salary range in INR.
+Show sources with links and dates. Clearly mark anything you are not sure about.`);
+P("chatgpt","cg-jon","Best job portals for AI and IT jobs","AI અને IT નોકરી માટે શ્રેષ્ઠ જૉબ પોર્ટલ",
+`Use web search. List the 12 best websites and apps in India where companies post AI, data and IT jobs for freshers.
+Include government portals such as the National Career Service if they are relevant.
+Make a table with: name, link, free or paid, type of jobs, and one tip to use it well.`);
+P("chatgpt","cg-jon","Job search keywords that recruiters use","રિક્રૂટર વાપરે તેવા જૉબ સર્ચ કીવર્ડ",
+`I want to search for AI jobs on Naukri, LinkedIn and Indeed. My skills are: [YOUR SKILLS, E.G. PYTHON, EXCEL, CHATGPT, CANVA].
+Give me 20 search keywords and job titles to type, grouped as:
+1. Exact AI roles
+2. AI-related roles
+3. Fresher-friendly roles
+Also give 5 LinkedIn search strings using AND, OR and quotes.`);
+P("chatgpt","cg-jon","LinkedIn headline and About section","LinkedIn હેડલાઇન અને About વિભાગ",
+`Act as a career coach. Rewrite my LinkedIn headline and About section so recruiters find me for entry-level AI jobs in India.
+My details: [DEGREE], [COLLEGE], [SKILLS], [PROJECTS].
+Give 3 headline options under 220 characters and one About section of about 150 words in simple, honest English.
+Do not invent any experience I do not have.`);
+P("chatgpt","cg-jon","Genuine remote AI jobs and scam warning signs","સાચી રિમોટ AI નોકરી અને છેતરપિંડીના સંકેત",
+`Use web search. Explain how a fresher in India can find genuine remote or work-from-home AI jobs, such as data labelling, AI training and content review.
+1. List trusted platforms with links.
+2. Give a checklist of 10 warning signs of fake job offers, such as asking for a registration fee or a deposit.
+3. Tell me where to report a job scam in India.
+Cite your sources.`);
+P("chatgpt","cg-jon","Find AI and data internships","AI અને ડેટા ઇન્ટર્નશિપ શોધો",
+`Use web search. Find current AI and data science internships for Indian students, including government programmes (for example the AICTE internship portal or ministry internships) and company programmes.
+For each give: name, link, eligibility, stipend if mentioned, and last date if shown.
+Write the date on which you found each one.`);
+P("chatgpt","cg-jon","Message and email to a recruiter","રિક્રૂટરને મેસેજ અને ઇમેલ",
+`Write a short, polite LinkedIn message (under 80 words) and a cold email (under 150 words) to an HR recruiter at [COMPANY NAME] asking about entry-level AI or data roles.
+I am a [DEGREE] graduate. My skills: [SKILLS]. My best project: [PROJECT].
+Keep it humble and specific. Give 2 versions of each.`);
+P("chatgpt","cg-jon","30-day plan to get my first AI job","પ્રથમ AI નોકરી માટે 30 દિવસનો પ્લાન",
+`Make a 30-day plan to get my first AI-related job in India. I can give [HOURS] hours a day.
+Split it into 4 weeks: profile building, learning one skill, applying, networking and interview practice.
+Show daily tasks in a table and a target number of applications for each week.`);
+
+P("chatgpt","cg-joff","Job fairs and walk-in drives near me","મારી નજીક જૉબ ફેર અને વૉક-ઇન ડ્રાઇવ",
+`Use web search. I live in [YOUR CITY], Gujarat.
+Find upcoming job fairs, walk-in interviews, Rozgar Melas and placement drives for IT, data and AI roles in my city and in Ahmedabad, Gandhinagar, Vadodara, Surat and Rajkot.
+For each give: date, place, organiser and source link.
+If you cannot find a recent event, say so clearly. Do not guess dates.`);
+P("chatgpt","cg-joff","IT companies to visit in my city","મારા શહેરમાં મુલાકાત લેવા જેવી IT કંપનીઓ",
+`Use web search. List IT and software companies, startups and IT parks in and around [YOUR CITY], Gujarat that may hire freshers for AI, data, testing or web roles.
+Give: company name, area, what they do, and website.
+Then tell me how to visit or contact them in person in a polite and professional way.`);
+P("chatgpt","cg-joff","Get ready for a walk-in interview","વૉક-ઇન ઇન્ટરવ્યૂની તૈયારી",
+`I am going for a walk-in interview for a [JOB ROLE] position tomorrow. My profile: [YOUR PROFILE].
+Make me a checklist:
+1. Documents to carry (resume copies, certificates, ID, photos)
+2. What to wear
+3. A 60-second self-introduction
+4. 10 likely questions with short sample answers based on my profile
+Keep it practical for an Indian fresher.`);
+P("chatgpt","cg-joff","Use the college placement cell","કૉલેજ પ્લેસમેન્ટ સેલનો ઉપયોગ",
+`How can I use my college placement cell and Training and Placement Officer (TPO) to get AI or IT jobs?
+Give 10 practical steps, a short respectful message I can send to the TPO, and how to ask seniors and alumni for job referrals without being pushy.`);
+P("chatgpt","cg-joff","Government skill and training centres","સરકારી સ્કિલ અને તાલીમ કેન્દ્રો",
+`Use web search. Which offline AI and IT training centres are run by or with the Government of India and the Government of Gujarat for students? Examples: Skill India centres, NIELIT, state IT training programmes.
+For each give: name, what they teach, who can join, fees if any, link, and whether they help with placement.`);
+P("chatgpt","cg-joff","Tech meetups and hackathons in Gujarat","ગુજરાતમાં ટેક મીટઅપ અને હૅકાથૉન",
+`Use web search. Find tech meetups, hackathons, Google Developer Groups, cloud user groups or AI community events in Gujarat in the next 2 months.
+Give: event name, date, place and link.
+Then teach me how to introduce myself at the event and how to follow up on LinkedIn afterwards.`);
+P("chatgpt","cg-joff","Script for visiting companies with my resume","રેઝ્યૂમે લઈને કંપનીની મુલાકાતની સ્ક્રિપ્ટ",
+`I want to visit small IT companies in my city with my printed resume.
+Write a short, polite script in English and in Gujarati for:
+1. Talking to the receptionist
+2. Talking to the manager if I meet them
+3. A 3-line summary of myself
+Also give tips on how to follow up one week later.`);
+
+P("chatgpt","cg-web","Offline web development jobs near me","મારી નજીક ઑફલાઇન વેબ ડેવલપમેન્ટ નોકરી",
+`Use web search. What offline web development jobs are available for freshers in [YOUR CITY], Gujarat and nearby cities: in IT companies, digital marketing agencies, local businesses, schools and print shops?
+Give typical job roles, skills asked (HTML, CSS, JavaScript, PHP, WordPress, React) and a realistic salary range in INR, with sources.`);
+P("chatgpt","cg-web","Local businesses that need a website","વેબસાઇટની જરૂર હોય તેવા સ્થાનિક વ્યવસાય",
+`I can build websites with [YOUR SKILLS].
+List 15 types of local businesses in a small Indian city that need a website or a Google Business Profile, such as clinics, coaching classes and sweet shops.
+For each give the website features they need and a fair starting price in INR for a fresher.`);
+P("chatgpt","cg-web","Pitch a website to a shop owner","દુકાનદારને વેબસાઇટ વિશે સમજાવો",
+`Write a simple pitch in Gujarati and English that I can use when I visit a local shop owner to offer a website.
+Explain the benefits in plain words (more customers, Google Maps, WhatsApp orders), give a sample price, and answer 5 common objections, such as 'I already use Facebook' or 'It is too costly'.`);
+P("chatgpt","cg-web","Portfolio projects to show in interviews","ઇન્ટરવ્યૂમાં બતાવવા પોર્ટફોલિયો પ્રોજેક્ટ",
+`I am a web development fresher. Which 5 small projects should I build and show in interviews (for example a restaurant site, a portfolio, a to-do app in JavaScript)?
+For each give the features, tools, and how to explain it in 30 seconds.
+Also tell me how to show my portfolio offline on my phone or with a printed QR code.`);
+P("chatgpt","cg-web","Junior web developer interview questions","જુનિયર વેબ ડેવલપર ઇન્ટરવ્યૂ પ્રશ્નો",
+`Give me 25 common interview questions for a junior web developer job in India from HTML, CSS, JavaScript, responsive design, Git and basic PHP or React.
+Give a short, simple answer for each and mark the 10 most important ones.`);
+P("chatgpt","cg-web","Freelance price list in INR","રૂપિયામાં ફ્રીલાન્સ ભાવ યાદી",
+`Make a price list in INR for a fresher web developer in a Gujarat city for:
+1. One-page website
+2. 5-page business website
+3. WordPress blog
+4. Small e-commerce website
+5. Monthly website maintenance
+Explain what is included, how many changes are allowed, and show a sample quotation format.`);
+P("chatgpt","cg-web","Practice tasks for practical tests","પ્રૅક્ટિકલ ટેસ્ટ માટે પ્રૅક્ટિસ કાર્ય",
+`Many companies give a practical test at walk-in interviews.
+Give me 10 practice tasks of 30 to 60 minutes each in HTML, CSS and JavaScript, for example a login form with validation or a responsive navigation bar.
+For each describe what to build and how the interviewer will judge it.`);
+
+P("chatgpt","cg-biz","30 low-cost IT business ideas","ઓછા ખર્ચના 30 IT બિઝનેસ આઇડિયા",
+`Use web search. Act as a startup mentor in India.
+Suggest 30 business ideas for a BCA or MCA graduate in the IT sector with a starting cost under [AMOUNT] INR.
+Group them into: services, products, AI-based ideas, training, and digitising local businesses.
+For each give one line on the idea, the customer, and how it earns money.`);
+P("chatgpt","cg-biz","Test whether my idea can work","મારો આઇડિયા ચાલશે કે નહીં તે ચકાસો",
+`I want to start this business: [YOUR IDEA].
+Act as a strict but kind business coach:
+1. Ask me 10 questions to test whether it can work.
+2. Do a SWOT analysis.
+3. List the first 5 customers I could approach.
+4. Tell me how to test the idea in 2 weeks for less than 5,000 INR.`);
+P("chatgpt","cg-biz","Plan a small AI services agency","નાની AI સર્વિસ એજન્સીનો પ્લાન",
+`Plan a small AI services agency run by 2 to 3 MCA graduates in Gujarat. Possible services: chatbots for businesses, AI content, workflow automation and AI training for staff.
+Give service packages with INR prices, target customers, a 90-day launch plan and the main risks.`);
+P("chatgpt","cg-biz","Government schemes for young founders","યુવા સ્થાપકો માટે સરકારી યોજનાઓ",
+`Use web search. Explain the government schemes and support a young IT graduate in Gujarat can use to start a business, such as Startup India recognition, Mudra loans, Gujarat startup and student startup policies, and university incubators.
+For each give the benefit, eligibility, how to apply and the official link.
+Mark anything that may have changed recently.`);
+P("chatgpt","cg-biz","First-year budget for my business","મારા બિઝનેસનું પ્રથમ વર્ષનું બજેટ",
+`Make a simple first-year budget in INR for this IT business: [YOUR IDEA] in [YOUR CITY].
+Include one-time costs (laptop, software, registration, website), monthly costs (internet, rent, tools, marketing) and expected income in 3 cases: low, medium and high.
+Show the month I may break even, in a table.`);
+P("chatgpt","cg-biz","Business name and tagline ideas","બિઝનેસ નામ અને ટૅગલાઇનના આઇડિયા",
+`Suggest 20 short, easy-to-remember names for my IT business that does [WHAT YOUR BUSINESS DOES].
+Mix English and Indian words. Give a tagline for each.
+Remind me to check whether the .com or .in domain and the trademark are available. Avoid names of famous brands.`);
+P("chatgpt","cg-biz","Research my competitors","મારા સ્પર્ધકોનું સંશોધન",
+`Use web search. Find 8 companies or freelancers in India that offer [YOUR SERVICE].
+Make a table with their services, public prices, strengths and weaknesses.
+Then suggest 3 ways I can be different and better for small businesses in Gujarat.`);
+P("chatgpt","cg-biz","Zero-budget marketing plan","શૂન્ય બજેટ માર્કેટિંગ પ્લાન",
+`Make a zero-budget marketing plan for the first 60 days of my new IT business: [NAME AND SERVICE].
+Use WhatsApp Business, Instagram, LinkedIn, Google Business Profile, college networks and local events.
+Give a weekly task list and 10 social media post ideas.`);
+P("chatgpt","cg-biz","Start a computer and AI coaching class","કમ્પ્યૂટર અને AI કોચિંગ ક્લાસ શરૂ કરો",
+`I am an MCA graduate. Plan a computer and AI training class for school and college students in my town.
+Suggest 5 courses (for example AI tools for students, Python basics, web design) with duration, fees in INR and batch size.
+List the equipment I need and how to get my first 20 students.`);
+P("chatgpt","cg-biz","Software product ideas for small businesses","નાના વ્યવસાય માટે સૉફ્ટવેર પ્રોડક્ટ આઇડિયા",
+`Use web search. Suggest 10 simple software products (apps or online tools) that Indian small businesses would pay for, such as billing, appointment booking or stock management for kirana shops.
+For each give the problem, main features, a monthly price in INR and existing competitors.`);
+
+P("chatgpt","cg-lyr","Hindi song: hard work before exams","હિન્દી ગીત: પરીક્ષા પહેલાં મહેનત",
+`Write an original Hindi song in Devanagari script for students about hard work and never giving up before exams.
+Structure: Intro, Verse 1, Chorus, Verse 2, Chorus, Bridge, Chorus, Outro.
+Put each section name in square brackets on its own line so I can paste the song into Suno.
+Keep lines short and singable, 6 to 9 words each, with a catchy chorus that repeats.
+Do not copy any existing song. Also give a song title and the English meaning of the chorus.`);
+P("chatgpt","cg-lyr","Hindi song: India's AI future","હિન્દી ગીત: ભારતનું AI ભવિષ્ય",
+`Write an original, upbeat Hindi song in Devanagari script about young Indians learning AI and building a digital future for the country.
+Structure: Verse 1, Pre-Chorus, Chorus, Verse 2, Pre-Chorus, Chorus, Bridge, Final Chorus.
+Put each section name in square brackets on its own line for Suno.
+Use simple, positive words. Do not copy any existing song. Give a title and the English meaning of the chorus.`);
+P("chatgpt","cg-lyr","Hindi song: college friendship farewell","હિન્દી ગીત: કૉલેજ મિત્રતાની વિદાય",
+`Write an original, emotional Hindi song in Devanagari script about college friends on their farewell day: memories of the canteen, exams, trips and promises to stay in touch.
+Structure: Intro, Verse 1, Chorus, Verse 2, Chorus, Bridge, Chorus, Outro.
+Put each section name in square brackets on its own line for Suno. Keep it original and give a title.`);
+P("chatgpt","cg-lyr","Hindi song: thank you, Maa","હિન્દી ગીત: આભાર, મા",
+`Write an original, gentle Hindi song in Devanagari script thanking a mother for her love and sacrifices.
+Structure: Verse 1, Chorus, Verse 2, Chorus, Bridge, Chorus.
+Put each section name in square brackets on its own line for Suno.
+Use warm, simple words a child or student could sing. Give a title and the English meaning of the chorus.`);
+P("chatgpt","cg-lyr","Hindi song: monsoon in the village","હિન્દી ગીત: ગામમાં ચોમાસું",
+`Write an original, cheerful Hindi song in Devanagari script about the first monsoon rain in an Indian village: the smell of wet soil, farmers smiling, children playing in puddles.
+Structure: Intro, Verse 1, Chorus, Verse 2, Chorus, Outro.
+Put each section name in square brackets on its own line for Suno. Give a title.`);
+P("chatgpt","cg-lyr","Festive Navratri song in Hindi","હિન્દીમાં નવરાત્રિનું ઉત્સવ ગીત",
+`Write an original, festive Hindi song in Devanagari script for Navratri garba nights, with a few simple Gujarati words mixed in.
+It should be about dancing together, colourful clothes and joy, with a chorus that a group can clap and sing along to.
+Structure: Intro, Verse 1, Chorus, Verse 2, Chorus, Bridge, Chorus.
+Put each section name in square brackets on its own line for Suno. Keep it respectful and original. Give a title.`);
+P("chatgpt","cg-lyr","Patriotic Hindi song","દેશભક્તિનું હિન્દી ગીત",
+`Write an original, inspiring patriotic Hindi song in Devanagari script for Independence Day about unity, our soldiers, farmers, scientists and young people building India.
+Structure: Intro, Verse 1, Chorus, Verse 2, Chorus, Bridge, Final Chorus.
+Put each section name in square brackets on its own line for Suno. Avoid any hate or politics. Give a title.`);
+P("chatgpt","cg-lyr","Hindi song: save trees, save Earth","હિન્દી ગીત: વૃક્ષ બચાવો, પૃથ્વી બચાવો",
+`Write an original Hindi song in Devanagari script that encourages students to plant trees, save water and keep their city clean.
+Structure: Verse 1, Chorus, Verse 2, Chorus, Bridge, Chorus.
+Put each section name in square brackets on its own line for Suno.
+Make the chorus short and easy for school children to remember. Give a title.`);
+
+P("chatgpt","cg-std","Explain any topic like a good teacher","કોઈ પણ વિષય સારા શિક્ષકની જેમ સમજાવો",
+`Explain [TOPIC] to me like a patient teacher explaining to a first-year college student.
+1. Start with a simple real-life Indian example.
+2. Then explain the main idea in 5 short points.
+3. Give 3 common mistakes students make.
+4. End with 5 quick questions to test me, with answers hidden at the end.`);
+P("chatgpt","cg-std","Make notes and a quiz from my chapter","મારા પ્રકરણમાંથી નોંધ અને ક્વિઝ બનાવો",
+`Here is my chapter text: [PASTE YOUR TEXT].
+Make:
+1. Short revision notes with headings and bullet points
+2. 10 multiple-choice questions with answers
+3. 5 short-answer exam questions
+4. A one-paragraph summary I can read the night before the exam`);
+P("chatgpt","cg-std","Improve my prompt","મારો પ્રૉમ્પ્ટ સુધારો",
+`I wrote this prompt: [YOUR PROMPT].
+Act as a prompt engineering teacher.
+1. Tell me what is missing (role, goal, context, format, limits).
+2. Rewrite it into a better prompt.
+3. Explain each change in one line, so I learn how to write better prompts myself.`);
+P("chatgpt","cg-std","Write resume content from my details","મારી વિગતમાંથી રેઝ્યૂમેનું લખાણ",
+`Write resume content for a fresher from these true details: [NAME, DEGREE, COLLEGE, SKILLS, PROJECTS, CERTIFICATES, ACHIEVEMENTS].
+Give: a 3-line professional summary, a skills list, and 2 to 3 bullet points for each project starting with action verbs.
+Keep it honest and fit it on one page. I will design it in Canva.`);
+P("chatgpt","cg-std","Mock interview practice","મૉક ઇન્ટરવ્યૂ પ્રૅક્ટિસ",
+`Take a mock interview for a [JOB ROLE] fresher position at an Indian IT company.
+Ask me one question at a time and wait for my answer.
+After each answer, give a score out of 10, what was good, what to improve and a better sample answer.
+Ask 8 questions in total: HR, technical and situation-based.`);
+
+/* ================= GEMINI (25) ================= */
+P("gemini","ge-img","Classroom of the future","ભવિષ્યનો વર્ગખંડ",
+`Create an image of an Indian college classroom in the year 2035. Students use laptops and holographic screens, a teacher explains AI on a large digital board, sunlight comes through big windows, plants near the walls. Bright, hopeful mood, realistic photo style, wide 16:9.`);
+P("gemini","ge-img","Indian street food stall","ભારતીય સ્ટ્રીટ ફૂડનો સ્ટૉલ",
+`Create a colourful digital illustration of a busy Indian street food stall in the evening selling pani puri and dabeli. Warm string lights, happy customers, steam rising from the food, detailed and cheerful, square 1:1.`);
+P("gemini","ge-img","Student studying at night","રાત્રે અભ્યાસ કરતો વિદ્યાર્થી",
+`Create a realistic photo of an Indian student studying at a wooden desk at night with a warm table lamp, books, a laptop and a cup of tea. Soft shadows, calm and focused mood, shallow depth of field, vertical 4:5.`);
+P("gemini","ge-img","Friendly robot teacher in a village school","ગામની શાળામાં મૈત્રીપૂર્ણ રોબોટ શિક્ષક",
+`Create a cute 3D cartoon image of a friendly robot teaching happy children in an Indian village school under a large banyan tree. Blackboard, school bags, bright colours, Pixar-like soft lighting, wide 16:9.`);
+P("gemini","ge-img","Change the background of my photo","મારા ફોટાનું બૅકગ્રાઉન્ડ બદલો",
+`I will upload a photo. Keep the person exactly the same, including the face, clothes and pose. Replace only the background with a modern library with wooden bookshelves and soft natural light, and make the lighting on the person match the new background.`,
+"Upload your own photo first. Do not upload photos of other people without their permission.","પહેલાં તમારો પોતાનો ફોટો અપલોડ કરો. બીજાની પરવાનગી વગર તેમના ફોટા અપલોડ ન કરો.");
+
+P("gemini","ge-ban","YouTube channel banner","YouTube ચૅનલ બૅનર",
+`Create a YouTube channel banner, wide 16:9, for a channel called '[CHANNEL NAME]' that teaches AI tools to students. Dark blue background with glowing circuit lines, small icons of a laptop, chat bubble and lightbulb. Put the channel name in large bold white letters in the centre and keep the edges plain.`);
+P("gemini","ge-ban","College tech fest banner","કૉલેજ ટેક ફેસ્ટ બૅનર",
+`Create a wide 3:1 banner for a college tech fest called '[FEST NAME] 2026' at [COLLEGE NAME]. Neon purple and blue colours, abstract technology shapes, a robot hand and a rocket. Show the fest name in big bold letters and the line 'Coding | AI | Robotics' below it.`);
+P("gemini","ge-ban","Diwali sale banner for a shop","દુકાન માટે દિવાળી સેલ બૅનર",
+`Create a festive Diwali sale banner, wide 16:9, for a shop called '[SHOP NAME]'. Glowing diyas, rangoli patterns, gold and deep red colours, soft bokeh lights. Big text 'Diwali Sale' and 'Up to 30% Off', with clean space at the bottom for contact details.`);
+P("gemini","ge-ban","Website hero banner for a coaching class","કોચિંગ ક્લાસ માટે વેબસાઇટ હીરો બૅનર",
+`Create a website hero banner, wide 21:9, for a computer coaching class called '[CLASS NAME]'. On the right, smiling Indian students with laptops in a bright classroom. Keep the left side plain light blue so I can add text later. Modern, clean, professional photo style.`);
+P("gemini","ge-ban","Instagram post for a workshop","વર્કશૉપ માટે Instagram પોસ્ટ",
+`Create a square 1:1 Instagram post announcing a free workshop 'AI Tools for Students' on [DATE] at [PLACE]. Bright yellow and black design, a laptop with a glowing AI icon, bold headline, date and place in clear text, and a 'Register Now' button shape at the bottom.`);
+
+P("gemini","ge-logo","Logo for a computer training institute","કમ્પ્યૂટર તાલીમ સંસ્થા માટે લોગો",
+`Design a modern, minimal logo for a computer and AI training institute named '[INSTITUTE NAME]'. Combine an open book and a circuit node in one simple icon. Use deep blue and orange on a white background, flat vector style, with the name in a clean sans-serif font below the icon.`);
+P("gemini","ge-logo","Logo for a tea café","ચા કૅફે માટે લોગો",
+`Design a warm, friendly logo for an Indian tea café called '[CAFE NAME]'. A steaming cutting-chai glass inside a circle, brown and cream colours, hand-drawn style, the name in a rounded font. Plain white background.`);
+P("gemini","ge-logo","Logo for a tech startup","ટેક સ્ટાર્ટઅપ માટે લોગો",
+`Design a minimal logo for a tech startup called '[STARTUP NAME]' that builds apps for small businesses. Use one geometric letter mark made from the first letter, a blue-to-teal gradient, and a lot of empty space. It should be readable even at very small sizes. White background.`);
+P("gemini","ge-logo","Logo for an organic farm","ઑર્ગેનિક ફાર્મ માટે લોગો",
+`Design a natural, earthy logo for an organic farm in Gujarat called '[FARM NAME]'. Combine a green leaf, a rising sun and a small field in a round badge. Green, yellow and brown colours, flat vector style, name written around the badge.`);
+P("gemini","ge-logo","Logo variations for social media","સોશિયલ મીડિયા માટે લોગોના વિવિધ રૂપ",
+`Take the logo idea for '[BRAND NAME]', which is [DESCRIBE YOUR LOGO]. Show it in 4 versions on one image: full colour, black only, white on a dark background, and a small round icon for a social media profile picture.`);
+
+P("gemini","ge-prod","Studio photo of a water bottle","પાણીની બૉટલનો સ્ટુડિયો ફોટો",
+`Create a professional product photo of a matte black steel water bottle standing on a wet stone, with water droplets on the bottle. Soft studio lighting, dark grey background, a light reflection on the side, sharp detail, advertising style, vertical 4:5.`);
+P("gemini","ge-prod","Lifestyle photo of handmade soap","હાથથી બનેલા સાબુનો લાઇફસ્ટાઇલ ફોટો",
+`Create a lifestyle product photo of three handmade herbal soap bars on a wooden tray with neem leaves, turmeric and rose petals around them. Soft morning sunlight, light and fresh feeling, top view, square 1:1, space at the top for a brand name.`);
+P("gemini","ge-prod","Advertisement for a masala tea pack","મસાલા ચાના પૅકની જાહેરાત",
+`Create an advertisement image for a masala tea pack called '[BRAND NAME]'. Show a colourful tea box next to a clay kulhad of hot tea, with cardamom, ginger and cinnamon on the table. Warm orange tones and the tagline 'Har Sip Mein Taazgi' in elegant text. Wide 16:9.`);
+P("gemini","ge-prod","Headphones ad with a tagline","ટૅગલાઇન સાથે હેડફોનની જાહેરાત",
+`Create a modern advertisement for wireless headphones floating in the air with sound waves around them. Bright gradient background from pink to purple, dynamic lighting, and the tagline 'Feel Every Beat' in bold modern text. Square 1:1 for Instagram.`);
+P("gemini","ge-prod","Festive offer for sports shoes","સ્પોર્ટ્સ શૂઝ માટે ઉત્સવની ઑફર",
+`Create a flat-lay product image of white running shoes on a bright yellow background with small festive confetti and marigold flowers. Add the text 'Festive Offer: Flat 20% Off' at the top. Clean, energetic e-commerce style, vertical 4:5.`);
+
+P("gemini","ge-nat","Asiatic lion in Gir forest at sunrise","સૂર્યોદય સમયે ગીરના જંગલમાં સિંહ",
+`Create a realistic wildlife photo of an Asiatic lion resting on a rock in the Gir forest of Gujarat at sunrise. Golden light through dry teak trees, a little morning mist, sharp detail on the mane, National Geographic style, wide 16:9.`);
+P("gemini","ge-nat","Himalayan valley with a river","નદી સાથે હિમાલયની ખીણ",
+`Create a breathtaking landscape of a green Himalayan valley with a clear blue river, snow-covered peaks, pine trees and colourful wildflowers. Soft clouds, bright afternoon light, ultra-detailed, wide 16:9.`);
+P("gemini","ge-nat","Rann of Kutch on a full-moon night","પૂનમની રાત્રે કચ્છનું રણ",
+`Create a magical landscape of the white salt desert of the Rann of Kutch on a full-moon night. Endless white ground with cracked patterns, a huge bright moon, a starry sky and a few small tents glowing in the distance. Calm and peaceful, wide 16:9.`);
+P("gemini","ge-nat","Kerala backwaters in the monsoon","ચોમાસામાં કેરળના બૅકવૉટર",
+`Create a realistic photo of a traditional houseboat on the Kerala backwaters during the monsoon. Coconut trees on both sides, dark rain clouds, light rain on the water, rich green colours and soft reflections. Vertical 4:5.`);
+P("gemini","ge-nat","Sunset at a peaceful beach","શાંત દરિયાકિનારે સૂર્યાસ્ત",
+`Create a peaceful beach scene at sunset with gentle waves, golden and pink sky, a few fishing boats on the sand and birds flying in the distance. Warm colours, soft focus, wide 16:9, suitable as a desktop wallpaper.`);
+
+/* ================= CLAUDE (18) ================= */
+var CLX = `
+Build it as a single HTML file with the CSS and JavaScript inside the same file.
+Make it responsive for mobile and desktop, use large, easy-to-read fonts and good colour contrast, and do not use any external libraries.`;
+P("claude","cl-soc","Website: Importance of Social Media","વેબસાઇટ: સોશિયલ મીડિયાનું મહત્ત્વ",
+`Create a one-page website on 'The Importance of Social Media' for college students.
+Sections: a hero banner with a title and short tagline, what social media is, 6 benefits shown as cards with icons, risks and how to stay safe, real examples from India, a 5-question quiz with instant feedback, and a footer.`+CLX);
+P("claude","cl-soc","Website: Social Media Marketing basics","વેબસાઇટ: સોશિયલ મીડિયા માર્કેટિંગની મૂળ બાબતો",
+`Create a one-page website that teaches 'Social Media Marketing Basics' to beginners.
+Sections: what social media marketing is, the main platforms (Instagram, Facebook, LinkedIn, YouTube, WhatsApp) shown as cards with best use and audience, a 5-step marketing plan as a timeline, key terms explained (reach, engagement, CTR, hashtags), a sample weekly content calendar table, and a summary.`+CLX);
+P("claude","cl-soc","Website: Instagram marketing for small shops","વેબસાઇટ: નાની દુકાનો માટે Instagram માર્કેટિંગ",
+`Create a one-page guide website called 'Instagram Marketing for Small Businesses in India'.
+Include: how to set up a business profile, types of posts (reels, carousels, stories), 10 post ideas for a local shop, best practices for hashtags and captions, how to use Instagram Insights, and a checklist with tick boxes the user can click.`+CLX);
+P("claude","cl-soc","Website: Cyber safety and cyberbullying","વેબસાઇટ: સાયબર સુરક્ષા અને સાયબર બુલિંગ",
+`Create an awareness website on 'Staying Safe on Social Media' for school and college students.
+Include: common dangers (fake profiles, phishing links, cyberbullying, oversharing), 8 safety tips as flip cards that turn over on click, what to do if you are bullied, how to report on major platforms, and the Indian cyber crime helpline 1930 and website cybercrime.gov.in shown clearly.`+CLX);
+P("claude","cl-soc","Website: Personal branding on LinkedIn","વેબસાઇટ: LinkedIn પર પર્સનલ બ્રાન્ડિંગ",
+`Create a one-page website called 'Build Your Personal Brand on LinkedIn' for BCA and MCA students.
+Sections: why LinkedIn matters, a step-by-step profile checklist, examples of good and weak headlines side by side, 10 post ideas for students, how to network politely, and a short do's and don'ts table.`+CLX);
+P("claude","cl-soc","Interactive content calendar planner","ઇન્ટરૅક્ટિવ કન્ટેન્ટ કૅલેન્ડર પ્લાનર",
+`Create an interactive 'Social Media Content Calendar' web page.
+The user can pick a month, see a calendar grid, click a date to add a post (platform, topic, caption, time), see posts as coloured tags by platform, delete posts, and save everything in the browser with localStorage so it stays after refresh.`+CLX);
+P("claude","cl-soc","Website: Influencer marketing explained","વેબસાઇટ: ઇન્ફ્લુઅન્સર માર્કેટિંગ સમજૂતી",
+`Create a one-page website that explains 'Influencer Marketing' in simple words.
+Include: what an influencer is, types by follower count (nano, micro, macro, mega) in a visual chart drawn with CSS, how brands work with influencers, how to measure results, the rule that paid posts must be clearly disclosed, and 3 short Indian-style case examples using made-up brand names.`+CLX);
+P("claude","cl-soc","Debate page: social media for teenagers","ચર્ચા પેજ: કિશોરો માટે સોશિયલ મીડિયા",
+`Create a debate-style web page on 'Social Media for Teenagers: Good or Bad?'.
+Show two columns, Pros and Cons, with 6 points each. Add a poll where the visitor votes and sees a result bar, a short balanced conclusion, and 5 tips for healthy screen time.`+CLX);
+P("claude","cl-soc","Website: WhatsApp Business for local shops","વેબસાઇટ: સ્થાનિક દુકાનો માટે WhatsApp Business",
+`Create a one-page guide website 'How Local Shops Can Use WhatsApp Business'.
+Include: the difference between WhatsApp and WhatsApp Business, setup steps with numbers, catalogue tips, quick replies and labels, 5 sample messages for offers and order confirmations, and a frequently asked questions section that opens and closes on click.`+CLX);
+P("claude","cl-soc","Social media analytics dashboard demo","સોશિયલ મીડિયા ઍનાલિટિક્સ ડૅશબોર્ડ ડેમો",
+`Create a demo 'Social Media Analytics Dashboard' web page using made-up sample data.
+Show: 4 summary cards (followers, reach, engagement rate, best post), a line chart of followers over 6 months and a bar chart of engagement by platform, both drawn with the HTML canvas, and a table of top posts. Add a dropdown to switch between Instagram, LinkedIn and YouTube data.`+CLX);
+
+P("claude","cl-oth","My personal portfolio website","મારી પર્સનલ પોર્ટફોલિયો વેબસાઇટ",
+`Create a personal portfolio website for me.
+My details: [NAME], [DEGREE AND COLLEGE], [SKILLS], [3 PROJECTS WITH ONE LINE EACH], [EMAIL], [LINKEDIN LINK].
+Sections: hero with my name and role, about me, skills as progress bars, project cards, a contact form that checks the input (no real sending), and a dark mode button.`+CLX);
+P("claude","cl-oth","Website: Digital payments and UPI safety","વેબસાઇટ: ડિજિટલ પેમેન્ટ અને UPI સુરક્ષા",
+`Create an awareness website on 'Safe Digital Payments with UPI' for families.
+Explain how UPI works in 4 simple steps, show the difference between paying and receiving money, list 8 common UPI frauds with how to avoid them, a 'Never share your UPI PIN' warning box, and the cyber crime helpline 1930.`+CLX);
+P("claude","cl-oth","Website: Save Water campaign","વેબસાઇટ: પાણી બચાવો અભિયાન",
+`Create a campaign website called 'Save Water, Save Life'.
+Include: a hero section with a strong message, facts about water use, 10 water-saving tips at home and in college, a calculator where the user enters daily habits and sees litres saved per month, a pledge button that shows a thank-you message, and a footer.`+CLX);
+P("claude","cl-oth","Website: AI tools guide for students","વેબસાઇટ: વિદ્યાર્થીઓ માટે AI ટૂલ માર્ગદર્શિકા",
+`Create a one-page website 'AI Tools Every Student Should Know'.
+Show cards for ChatGPT, Claude, Gemini, Canva, Gamma, Suno, Lovable and Google AI Studio with what each does and one student use case. Add a search box that filters the cards, a section on using AI honestly for studies, and a short glossary.`+CLX);
+P("claude","cl-oth","Website: How to spot fake news","વેબસાઇટ: નકલી સમાચાર કેવી રીતે ઓળખવા",
+`Create a website 'How to Spot Fake News and Deepfakes'.
+Include: what fake news and deepfakes are, a 7-step checking method, examples of warning signs, a practice game where the user decides 'Real or Fake?' for 5 sample headlines and gets a score, and links to fact-checking habits such as checking the date and the source.`+CLX);
+P("claude","cl-oth","Quiz app on AI basics","AI ની મૂળ બાબતો પર ક્વિઝ ઍપ",
+`Create a quiz web app on 'AI Basics' with 15 multiple-choice questions.
+Show one question at a time with a progress bar and a 30-second timer, highlight correct and wrong answers in green and red, show the final score with a message, and let the user restart. Questions should cover AI, machine learning, prompts, chatbots and AI safety.`+CLX);
+P("claude","cl-oth","College event landing page","કૉલેજ ઇવેન્ટ લૅન્ડિંગ પેજ",
+`Create a landing page for a college event: [EVENT NAME] on [DATE] at [COLLEGE NAME].
+Include: a hero section with a countdown timer to the event date, an event schedule timeline, speaker cards, a registration form with validation (no real submission), a location section and a frequently asked questions section.`+CLX);
+P("claude","cl-oth","Fix and improve my HTML code","મારો HTML કોડ સુધારો",
+`Here is my HTML code: [PASTE YOUR CODE].
+1. Find and fix any errors.
+2. Make it responsive for mobile.
+3. Improve the design with better spacing, fonts and colours.
+4. Make it accessible (alt text, labels, contrast).
+Give me the full corrected file and a list of every change you made in simple words.`);
+
+/* ================= GOOGLE AI STUDIO (15) ================= */
+var ASX = `
+Use plain HTML, CSS and JavaScript (or React if the builder prefers), keep prices in Indian rupees, make it fully responsive, and use sample product data and placeholder images. Do not connect any real payment system.`;
+P("aistudio","as-web","E-commerce template for one sample product","એક નમૂના પ્રોડક્ટ માટે ઈ-કૉમર્સ ટેમ્પ્લેટ",
+`Build an e-commerce website template for one sample product: a smart steel water bottle priced at 799 rupees.
+Pages or sections: hero with the product image and a Buy Now button, features with icons, colour choices that change the image, customer reviews, frequently asked questions, a cart drawer that updates the total, and a footer.`+ASX);
+P("aistudio","as-web","Online store with cart","કાર્ટ સાથેનો ઑનલાઇન સ્ટોર",
+`Build a small online store with 12 sample products in 3 categories (electronics, stationery, clothing).
+Include a product grid, category filter, search box, sort by price, Add to Cart, a cart page with quantity buttons and total including 18% GST, and save the cart in localStorage.`+ASX);
+P("aistudio","as-web","Product detail page","પ્રોડક્ટ વિગત પેજ",
+`Build a detailed product page for a pair of wireless earbuds.
+Include an image gallery with thumbnails, price with a discount label, an EMI note, colour and quantity selector, a delivery check by PIN code using sample data, tabs for Description, Specifications and Reviews, and a 'Similar products' row.`+ASX);
+P("aistudio","as-web","Checkout page with form checks","ફૉર્મ ચકાસણી સાથે ચેકઆઉટ પેજ",
+`Build a checkout page for an Indian online store.
+Include an address form (name, mobile number with 10-digit check, PIN code with 6-digit check, state dropdown with Indian states), delivery options, an order summary with GST, a payment choice (UPI, card, cash on delivery) shown only as a demo, and an order success screen with a random order number.`+ASX);
+P("aistudio","as-web","Admin page to add products","પ્રોડક્ટ ઉમેરવા માટે ઍડમિન પેજ",
+`Build a simple admin dashboard for a small shop.
+The admin can add, edit and delete products (name, price, stock, category, image link), see a table of all products, get a warning when stock is below 5, and see total stock value. Save data in localStorage.`+ASX);
+P("aistudio","as-web","Restaurant menu with WhatsApp ordering","WhatsApp ઑર્ડર સાથે રેસ્ટોરન્ટ મેનૂ",
+`Build an online menu website for a restaurant called '[RESTAURANT NAME]'.
+Show menu categories (starters, Gujarati thali, Chinese, drinks), veg and non-veg labels, Add buttons, and a cart. The 'Order on WhatsApp' button should open WhatsApp with the order list and total written in the message, using the number [WHATSAPP NUMBER].`+ASX);
+P("aistudio","as-web","Handicraft store for Gujarat artisans","ગુજરાતના કારીગરો માટે હસ્તકલા સ્ટોર",
+`Build an online store template for handmade crafts from Gujarat, such as Patola-style scarves, Kutch embroidery bags, clay pots and bandhani dupattas.
+Include an 'About the artisans' story section, a product grid, a product quick-view popup, a wishlist with heart icons and a contact form for bulk orders.`+ASX);
+P("aistudio","as-web","Kirana grocery ordering website","કરિયાણા ઑર્ડર કરવાની વેબસાઇટ",
+`Build a grocery ordering website for a local kirana shop.
+Include categories (atta and rice, dal, oil, snacks, dairy), product cards with weight options (500 g, 1 kg, 5 kg) that change the price, a cart, a delivery time slot picker, and a minimum order rule of 300 rupees for free delivery.`+ASX);
+P("aistudio","as-web","Book store with search and filters","સર્ચ અને ફિલ્ટર સાથે પુસ્તક સ્ટોર",
+`Build an online book store with 20 sample books.
+Include search by title or author, filters for category, language (English, Hindi, Gujarati) and price range, star ratings, a book detail popup and a cart. Show 'New arrivals' and 'Bestsellers' rows at the top.`+ASX);
+P("aistudio","as-web","Clothing store with sizes and wishlist","સાઇઝ અને વિશલિસ્ટ સાથે કપડાંનો સ્ટોર",
+`Build a clothing store template with men, women and kids sections.
+Include a size selector (S, M, L, XL) with a size chart popup, colour swatches, a wishlist page, a cart, a festive sale banner at the top and a 'Recently viewed' row saved in localStorage.`+ASX);
+P("aistudio","as-web","Landing page for a mobile app launch","મોબાઇલ ઍપ લૉન્ચ માટે લૅન્ડિંગ પેજ",
+`Build a landing page for launching a student study-planner app called '[APP NAME]'.
+Include a hero with a phone mock-up, 6 feature cards, a 'How it works' 3-step section, a screenshots slider, testimonials, a pricing teaser, and an email sign-up form with validation.`+ASX);
+P("aistudio","as-web","Pricing page with monthly and yearly plans","માસિક અને વાર્ષિક પ્લાન સાથે પ્રાઇસિંગ પેજ",
+`Build a pricing page for an online course website with 3 plans: Basic, Pro and Premium.
+Add a monthly or yearly switch that changes prices (yearly saves 20%), highlight the most popular plan, show a feature comparison table with tick and cross marks, and add a frequently asked questions section.`+ASX);
+P("aistudio","as-web","Order tracking page","ઑર્ડર ટ્રૅકિંગ પેજ",
+`Build an order tracking page for an online store.
+The user enters an order number (use 5 sample orders), then sees a progress tracker: Ordered, Packed, Shipped, Out for delivery, Delivered, with dates, the delivery address and a 'Need help?' button. Show an error message for an unknown order number.`+ASX);
+P("aistudio","as-web","Turn my design into React components","મારી ડિઝાઇનને React કૉમ્પોનન્ટમાં ફેરવો",
+`I will paste HTML for an e-commerce page: [PASTE YOUR HTML].
+Convert it into clean React components (Header, ProductCard, ProductGrid, Cart, Footer) with props and state for the cart.
+Explain the folder structure and how each component works, in simple words for a beginner.`);
+P("aistudio","as-web","Add dark mode and make it search-friendly","ડાર્ક મોડ ઉમેરો અને સર્ચ-ફ્રેન્ડલી બનાવો",
+`Here is my e-commerce website code: [PASTE YOUR CODE].
+1. Add a dark mode switch that remembers the choice.
+2. Improve SEO: title, meta description, headings, image alt text and product structured data.
+3. Improve page speed.
+Give me the updated code and explain each change.`);
+
+/* ================= LOVABLE (8) ================= */
+P("lovable","lv-app","Student portfolio with a project gallery","પ્રોજેક્ટ ગૅલરી સાથે વિદ્યાર્થી પોર્ટફોલિયો",
+`Build a modern personal portfolio app for a BCA student named [YOUR NAME].
+Pages: Home, About, Skills, Projects (cards with image, tech used and GitHub link), Certificates and Contact.
+Add smooth animations, a dark and light theme switch and an easy way for me to edit my details later.`);
+P("lovable","lv-app","College event registration app","કૉલેજ ઇવેન્ટ નોંધણી ઍપ",
+`Build a college event registration app.
+Students can see a list of events, open event details, and register with name, enrolment number, branch and mobile number.
+Add an admin page with a simple password where organisers see all registrations in a table, search them and download them as a CSV file. Store data in a database.`);
+P("lovable","lv-app","Personal expense tracker","પર્સનલ ખર્ચ ટ્રૅકર",
+`Build a personal expense tracker app for students in rupees.
+Users can add an expense with amount, category (food, travel, books, mobile recharge, other), date and note.
+Show a monthly total, a pie chart by category, a monthly budget with a warning when 80% is used, and filters by month.`);
+P("lovable","lv-app","Attendance app for a coaching class","કોચિંગ ક્લાસ માટે હાજરી ઍપ",
+`Build an attendance app for a small coaching class.
+The teacher can add batches and students, mark present or absent for each day with one tap, see each student's attendance percentage, and see a list of students below 75%. Make it work well on a mobile phone.`);
+P("lovable","lv-app","Job application tracker","જૉબ અરજી ટ્રૅકર",
+`Build a job application tracker for a fresher looking for AI and IT jobs.
+Show a board with columns: Wishlist, Applied, Interview, Offer, Rejected. Each card has company, role, city, job link, date applied and notes. Cards can be dragged between columns. Add a dashboard with total applications and an interview rate.`);
+P("lovable","lv-app","Recipe sharing app","રેસિપી શેરિંગ ઍપ",
+`Build a recipe sharing app focused on Indian home cooking.
+Users can sign up, post a recipe with photo, ingredients, steps, cooking time and veg or non-veg label, search recipes, filter by state cuisine (Gujarati, Punjabi, South Indian and others), and save favourites.`);
+P("lovable","lv-app","Quiz app with a leaderboard","લીડરબોર્ડ સાથે ક્વિઝ ઍપ",
+`Build a quiz app for students on computer and AI topics.
+Include topic selection, 10 timed questions per quiz, instant answer feedback, a final score, and a leaderboard that shows the top 10 scores with names. Add an admin page to add new questions.`);
+P("lovable","lv-app","Local business directory","સ્થાનિક વ્યવસાય ડિરેક્ટરી",
+`Build a local business directory app for [YOUR CITY].
+Businesses have a name, category, address, phone, opening hours, photos and a map location. Users can search, filter by category, see 'Open now', call with one tap and leave a star rating and review.`);
+
+/* ================= SUNO (15) ================= */
+function SN(n){ return ["Use with the Hindi lyrics from ChatGPT prompt "+n+". Paste the lyrics in the Lyrics box and this text in the Style box.","ChatGPT પ્રૉમ્પ્ટ "+n+" ના હિન્દી શબ્દો સાથે વાપરો. શબ્દો Lyrics બૉક્સમાં અને આ લખાણ Style બૉક્સમાં પેસ્ટ કરો."]; }
+var s;
+s=SN("CG-33"); P("suno","su-mus","Motivational exam song","પરીક્ષા માટે પ્રેરણાદાયી ગીત",`Upbeat Hindi pop, motivational, acoustic guitar, tabla and energetic drums, clear male vocals, catchy chorus, 110 bpm`,s[0],s[1]);
+s=SN("CG-34"); P("suno","su-mus","AI future anthem","AI ભવિષ્યનું ગીત",`Energetic Hindi electro-pop anthem, synth bass, modern beats, inspiring, bright female vocals, big chorus, 120 bpm`,s[0],s[1]);
+s=SN("CG-35"); P("suno","su-mus","College farewell song","કૉલેજ વિદાય ગીત",`Emotional Hindi acoustic ballad, soft piano and guitar, nostalgic, warm male and female duet, slow build, 80 bpm`,s[0],s[1]);
+s=SN("CG-36"); P("suno","su-mus","Song for Maa","મા માટેનું ગીત",`Gentle Hindi lullaby-style song, soft flute, sitar and strings, tender female vocals, peaceful and heartfelt, 70 bpm`,s[0],s[1]);
+s=SN("CG-37"); P("suno","su-mus","Monsoon village song","ગામના ચોમાસાનું ગીત",`Cheerful Hindi folk-pop, dholak, flute and rain sound effects, joyful group vocals, rustic and bright, 100 bpm`,s[0],s[1]);
+s=SN("CG-38"); P("suno","su-mus","Navratri garba song","નવરાત્રિ ગરબા ગીત",`Festive Gujarati garba dance song with Hindi vocals, dhol and dandiya beats, shehnai, clapping, energetic group chorus, 130 bpm`,s[0],s[1]);
+s=SN("CG-39"); P("suno","su-mus","Patriotic song","દેશભક્તિ ગીત",`Inspiring Hindi patriotic song, orchestral strings, marching drums, brass, powerful male vocals with choir, uplifting, 95 bpm`,s[0],s[1]);
+s=SN("CG-40"); P("suno","su-mus","Save trees song for children","બાળકો માટે વૃક્ષ બચાવો ગીત",`Happy Hindi children's song, ukulele, xylophone, simple claps, cheerful kids choir, easy sing-along, 105 bpm`,s[0],s[1]);
+s=["Use with any of the Hindi lyrics from ChatGPT prompts CG-33 to CG-40 to hear the same song in a new style.","એ જ ગીત નવી શૈલીમાં સાંભળવા ChatGPT પ્રૉમ્પ્ટ CG-33 થી CG-40 માંથી કોઈ પણ હિન્દી શબ્દો સાથે વાપરો."];
+P("suno","su-alt","Lo-fi study version","લો-ફાઇ અભ્યાસ વર્ઝન",`Hindi lo-fi chill, soft vinyl crackle, mellow keys, relaxed beats, calm male vocals, study mood, 75 bpm`,s[0],s[1]);
+P("suno","su-alt","Unplugged acoustic version","અનપ્લગ્ડ એકૉસ્ટિક વર્ઝન",`Hindi unplugged acoustic, solo guitar and light cajon, intimate live feel, soulful vocals, 85 bpm`,s[0],s[1]);
+P("suno","su-alt","Bollywood cinematic version","બોલિવૂડ સિનેમેટિક વર્ઝન",`Bollywood cinematic romantic style, lush strings, piano, tabla, emotional male vocals, grand final chorus, 90 bpm`,s[0],s[1]);
+P("suno","su-alt","Hindi hip-hop version","હિન્દી હિપ-હૉપ વર્ઝન",`Desi Hindi hip-hop, punchy 808 drums, deep bass, confident rap verses, sung melodic chorus, 92 bpm`,s[0],s[1]);
+P("suno","su-alt","Devotional bhajan version","ભક્તિ ભજન વર્ઝન",`Peaceful Hindi devotional bhajan style, harmonium, tabla, manjira, calm group vocals, spiritual and soothing, 80 bpm`,s[0],s[1]);
+P("suno","su-alt","Instrumental background for a presentation","પ્રેઝન્ટેશન માટે બૅકગ્રાઉન્ડ વાદ્ય સંગીત",`Instrumental only, no vocals, light corporate background music, soft piano and gentle synth pads, positive and calm, 100 bpm`,
+"Switch on Instrumental in Suno. You do not need lyrics. Use the music behind your Gamma presentation or a college video.","Suno માં Instrumental ચાલુ કરો. શબ્દોની જરૂર નથી. Gamma પ્રેઝન્ટેશન કે કૉલેજ વીડિયો પાછળ આ સંગીત વાપરો.");
+P("suno","su-alt","Indian classical fusion instrumental","ભારતીય શાસ્ત્રીય ફ્યૂઝન વાદ્ય સંગીત",`Instrumental only, Indian classical fusion, sitar and bansuri melody, tabla rhythm, soft electronic pads, peaceful morning raga feel, 90 bpm`,
+"Switch on Instrumental in Suno. Good for a nature video or a yoga session.","Suno માં Instrumental ચાલુ કરો. કુદરતના વીડિયો કે યોગ સત્ર માટે સારું.");
+
+/* ================= GAMMA (12) ================= */
+var GAX = `
+Use simple English for college students, short bullet points (no more than 5 per slide), one relevant image idea on each slide, and a clean, modern theme.`;
+P("gamma","ga-ppt","Nature and Environment","કુદરત અને પર્યાવરણ",
+`Create a 10-slide presentation on 'Nature and Environment'.
+Slides: 1 Title, 2 What is the environment, 3 Why nature matters, 4 Forests and wildlife, 5 Water resources, 6 Air pollution, 7 Plastic waste, 8 Climate change basics, 9 What students can do, 10 Conclusion and a pledge.`+GAX);
+P("gamma","ga-ppt","Climate change and India","આબોહવા પરિવર્તન અને ભારત",
+`Create a 10-slide presentation on 'Climate Change and India'.
+Cover: what climate change is, causes, effects on Indian weather and farming, heatwaves and floods, India's renewable energy push, what cities can do, what students can do, and a hopeful conclusion. Ask me to add the latest data from a trusted source.`+GAX);
+P("gamma","ga-ppt","Importance of Social Media","સોશિયલ મીડિયાનું મહત્ત્વ",
+`Create a 10-slide presentation on 'The Importance of Social Media'.
+Cover: introduction, popular platforms, benefits for students, benefits for business, social media marketing basics, risks and fake news, online safety tips, healthy usage habits, career opportunities, and conclusion.`+GAX);
+P("gamma","ga-ppt","AI in everyday life","રોજિંદા જીવનમાં AI",
+`Create a 10-slide presentation on 'Artificial Intelligence in Everyday Life'.
+Cover: what AI is, AI in phones, AI in banking and UPI fraud checks, AI in healthcare, AI in farming, AI in education, AI tools for students, risks and ethics, future jobs, and conclusion.`+GAX);
+P("gamma","ga-ppt","Cyber security for students","વિદ્યાર્થીઓ માટે સાયબર સુરક્ષા",
+`Create a 10-slide presentation on 'Cyber Security for Students'.
+Cover: why it matters, strong passwords, two-step verification, phishing, social media privacy, safe UPI use, public Wi-Fi risks, deepfakes, how to report cyber crime in India (helpline 1930), and a quick checklist.`+GAX);
+P("gamma","ga-ppt","Startup pitch deck for my IT business idea","મારા IT બિઝનેસ આઇડિયા માટે પિચ ડેક",
+`Create a 10-slide startup pitch deck for my business idea: [YOUR IDEA FROM CHATGPT].
+Slides: Title and tagline, Problem, Solution, Target customers, Market opportunity in India, Business model and pricing in INR, Competition, Marketing plan, Team, and The ask and next steps.
+Use a professional, confident theme.`);
+P("gamma","ga-ppt","Digital India","ડિજિટલ ઇન્ડિયા",
+`Create a 10-slide presentation on 'Digital India and the Digital Economy'.
+Cover: what Digital India is, internet growth, UPI and digital payments, Aadhaar-based services, DigiLocker, online government services, digital education, digital skills for youth, challenges, and the way forward.`+GAX);
+P("gamma","ga-ppt","Water conservation","જળ સંરક્ષણ",
+`Create a 10-slide presentation on 'Water Conservation'.
+Cover: the water cycle, India's water situation, causes of water shortage, rainwater harvesting, check dams in Gujarat villages, saving water at home, saving water in farming, the role of students, a success story, and conclusion.`+GAX);
+P("gamma","ga-ppt","Renewable energy in Gujarat","ગુજરાતમાં રિન્યુએબલ ઊર્જા",
+`Create a 10-slide presentation on 'Renewable Energy in Gujarat'.
+Cover: what renewable energy is, solar power, wind power, rooftop solar for homes, large solar and wind parks in Gujarat, green jobs, benefits, challenges, and the future. Ask me to check current figures from an official source.`+GAX);
+P("gamma","ga-ppt","Career options after BCA and MCA","BCA અને MCA પછી કારકિર્દીના વિકલ્પો",
+`Create a 10-slide presentation on 'Career Options After BCA and MCA'.
+Cover: jobs in software development, web development, data and AI, cloud and DevOps, cyber security, digital marketing, government jobs, higher studies, starting your own business, and how to prepare in the final year.`+GAX);
+P("gamma","ga-ppt","Final-year project presentation","અંતિમ વર્ષ પ્રોજેક્ટ પ્રેઝન્ટેશન",
+`Create a 10-slide presentation for my final-year project: [PROJECT TITLE].
+Slides: Title with my name and guide, Introduction, Problem statement, Objectives, Existing system and its limits, Proposed system, Technology used ([TECH STACK]), System design and modules, Screenshots and results, Conclusion and future scope.
+Use a formal, academic theme.`);
+P("gamma","ga-ppt","Healthy lifestyle for students","વિદ્યાર્થીઓ માટે સ્વસ્થ જીવનશૈલી",
+`Create a 10-slide presentation on 'A Healthy Lifestyle for Students'.
+Cover: why health matters, balanced Indian diet, drinking water, exercise and yoga, sleep, screen time, stress before exams, healthy friendships, a simple daily routine, and conclusion.`+GAX);
+
+/* ================= CANVA (12) ================= */
+var CAL = `
+Size 1584 x 396 pixels (LinkedIn Background Photo). Keep the left side plain because the profile photo covers it, and keep the text large and readable on mobile.`;
+P("canva","ca-li","LinkedIn banner: fresher web developer","LinkedIn બૅનર: ફ્રેશર વેબ ડેવલપર",
+`Design a LinkedIn banner for a fresher web developer. Dark navy background with subtle code symbols, the text 'Web Developer | HTML · CSS · JavaScript · React' and a short line 'Building fast, mobile-friendly websites'.`+CAL);
+P("canva","ca-li","LinkedIn banner: AI enthusiast","LinkedIn બૅનર: AI ઉત્સાહી",
+`Design a LinkedIn banner for a student who is learning AI. Gradient from deep purple to blue, soft neural-network lines, the text 'Aspiring AI Engineer | Python · Prompt Engineering · Machine Learning' and 'Learning every day'.`+CAL);
+P("canva","ca-li","LinkedIn banner: data analyst","LinkedIn બૅનર: ડેટા ઍનાલિસ્ટ",
+`Design a LinkedIn banner for a fresher data analyst. Clean white background with light blue chart shapes, the text 'Data Analyst | Excel · SQL · Power BI · Python' and 'Turning data into decisions'.`+CAL);
+P("canva","ca-li","LinkedIn banner: digital marketer","LinkedIn બૅનર: ડિજિટલ માર્કેટર",
+`Design a bright LinkedIn banner for a digital marketing fresher. Orange and pink gradient, small social media icon shapes, the text 'Digital Marketing | SEO · Social Media · Content' and 'Helping brands grow online'.`+CAL);
+P("canva","ca-li","LinkedIn banner: computer teacher or trainer","LinkedIn બૅનર: કમ્પ્યૂટર શિક્ષક કે ટ્રેનર",
+`Design a friendly LinkedIn banner for a computer and AI trainer. Warm yellow and teal colours, a simple illustration of a classroom and laptop, the text 'Computer & AI Trainer | Teaching students practical tech skills' and the institute name '[INSTITUTE NAME]'.`+CAL);
+P("canva","ca-li","LinkedIn banner: student startup founder","LinkedIn બૅનર: વિદ્યાર્થી સ્ટાર્ટઅપ સ્થાપક",
+`Design a bold LinkedIn banner for a student founder of an IT startup called '[STARTUP NAME]'. Black background with an electric green accent line, the text 'Founder, [STARTUP NAME] | Building tech for small businesses' and the website [WEBSITE].`+CAL);
+var CAR = `
+Use a Canva Resume template on an A4 page with a clean, professional layout that is easy for a computer to read (simple fonts, clear headings, no important text inside images). Replace every sample line with my real details and keep it to one page.`;
+P("canva","ca-cv","Fresher BCA resume","ફ્રેશર BCA રેઝ્યૂમે",
+`Create a one-page resume for a fresher BCA graduate applying for IT support and junior developer jobs.
+Sections: name and contact, career objective, education, technical skills, projects, certifications, internships, achievements and languages (English, Hindi, Gujarati).`+CAR);
+P("canva","ca-cv","MCA graduate resume","MCA સ્નાતક રેઝ્યૂમે",
+`Create a one-page resume for an MCA graduate applying for software developer jobs.
+Sections: name and contact with LinkedIn and GitHub, professional summary, technical skills grouped by languages, frameworks, databases and tools, academic projects with results, internship, certifications and education.`+CAR);
+P("canva","ca-cv","Web developer resume with portfolio link","પોર્ટફોલિયો લિંક સાથે વેબ ડેવલપર રેઝ્યૂમે",
+`Create a modern one-page resume for a junior web developer.
+Put the portfolio website link and a QR code to it at the top, then summary, skills (HTML, CSS, JavaScript, React, PHP, WordPress, Git), 3 projects with live links, freelance work, education and certifications.`+CAR);
+P("canva","ca-cv","Resume for AI and data roles","AI અને ડેટા ભૂમિકા માટે રેઝ્યૂમે",
+`Create a one-page resume for a fresher applying for AI and data analyst roles.
+Sections: summary, skills (Python, SQL, Excel, Power BI, machine learning basics, prompt engineering, AI tools), projects with the dataset and result, Kaggle or GitHub links, online courses and certificates, and education.`+CAR);
+P("canva","ca-cv","Turn my ChatGPT resume text into a design","ChatGPT ના રેઝ્યૂમે લખાણને ડિઝાઇનમાં ફેરવો",
+`I have resume text that I wrote with ChatGPT prompt CG-44: [PASTE YOUR RESUME TEXT].
+Place it into a professional one-page resume design with a two-column layout: contact and skills on the left, summary, projects and education on the right. Use dark blue for headings and keep plenty of white space.`+CAR);
+P("canva","ca-cv","Matching cover letter","મેળ ખાતો કવર લેટર",
+`Create a one-page cover letter using the same colours and fonts as my resume.
+Apply for the role [JOB ROLE] at [COMPANY NAME]. Include today's date, the hiring manager greeting, 3 short paragraphs (why this company, what I can do with examples from my projects, a polite closing) and my name and contact details. Keep it honest and under 250 words.`);
 var SECS = [
  {k:"front",p:"",en:"Front Page",gu:"મુખ્ય પાનું"},
  {k:"india",p:"I",en:"India and Government",gu:"ભારત અને સરકાર",ien:"What the Government of India is doing on AI: missions, models, rules, skilling and Gujarat.",igu:"AI ક્ષેત્રે ભારત સરકાર શું કરે છે: મિશન, મૉડલ, નિયમો, સ્કિલિંગ અને ગુજરાત."},
@@ -563,6 +1146,7 @@ var SECS = [
  {k:"business",p:"B",en:"AI in Business",gu:"બિઝનેસમાં AI",ien:"Funding, deals, company results and what AI means for jobs and industry.",igu:"ફંડિંગ, સોદા, કંપનીનાં પરિણામ અને નોકરી તથા ઉદ્યોગ પર AI ની અસર."},
  {k:"datacenters",p:"D",en:"Data Centers",gu:"ડેટા સેન્ટર",ien:"Chips, power, nuclear deals and India's data-centre build-out.",igu:"ચિપ, વીજળી, પરમાણુ કરાર અને ભારતમાં ડેટા સેન્ટરનું નિર્માણ."},
  {k:"agents",p:"A",en:"AI Agents at Work",gu:"કામ કરતા AI એજન્ટ",ien:"Which agents companies use, for which job, and what results they report.",igu:"કંપનીઓ કયા એજન્ટ, કયા કામ માટે વાપરે છે અને કેવાં પરિણામ જણાવે છે."},
+ {k:"prompts",p:"",hl:"hl-p",en:"\u270E Prompt Library",gu:"\u270E પ્રૉમ્પ્ટ લાઇબ્રેરી",ien:"150 ready-to-copy practice prompts, sorted by tool. Change the yellow words, copy, paste and learn by doing.",igu:"ટૂલ પ્રમાણે ગોઠવેલા, કૉપી કરવા તૈયાર 150 પ્રૅક્ટિસ પ્રૉમ્પ્ટ. પીળા શબ્દો બદલો, કૉપી કરો, પેસ્ટ કરો અને કરીને શીખો."},
  {k:"youtube",p:"",hl:"hl-y",en:"\u25B6 YouTube Classroom",gu:"\u25B6 YouTube ક્લાસરૂમ",ien:"The best YouTube channels and series for learning AI and AI tools, in English, Hindi and Gujarati.",igu:"AI અને AI ટૂલ શીખવા માટેની શ્રેષ્ઠ YouTube ચૅનલ અને સિરીઝ: અંગ્રેજી, હિન્દી અને ગુજરાતીમાં."},
  {k:"websites",p:"",hl:"hl-w",en:"\u2605 AI Websites",gu:"\u2605 AI વેબસાઇટ",ien:"Websites that track AI tools and AI news, plus official sources and free courses.",igu:"AI ટૂલ અને AI સમાચાર પર નજર રાખતી વેબસાઇટ, સાથે સત્તાવાર સ્રોત અને મફત કોર્સ."}
 ];
@@ -599,6 +1183,12 @@ var UI = {
  linknote:["Subscriber counts are rounded estimates from third-party trackers. Please open a link once to confirm it before sharing.","સબસ્ક્રાઇબરના આંકડા થર્ડ-પાર્ટી ટ્રૅકરના અંદાજ છે. શેર કરતા પહેલાં લિંક એક વાર ખોલીને ચકાસો."],
  promoY:["New: YouTube Classroom. {n} channels to learn AI in English, Hindi and Gujarati","નવું: YouTube ક્લાસરૂમ. અંગ્રેજી, હિન્દી અને ગુજરાતીમાં AI શીખવા {n} ચૅનલ"],
  promoW:["New: AI Websites. {n} sites for AI tools, news and free courses","નવું: AI વેબસાઇટ. AI ટૂલ, સમાચાર અને મફત કોર્સ માટે {n} સાઇટ"],
+ copy:["Copy prompt","પ્રૉમ્પ્ટ કૉપી કરો"], copied:["Copied!","કૉપી થયું!"], openTool:["Open","ખોલો"], allTools:["All tools","બધાં ટૂલ"], howUse:["How to use","કેવી રીતે વાપરવું"], prompts:["prompts","પ્રૉમ્પ્ટ"],
+ ptip:["Words in yellow [LIKE THIS] are for you to change. Prompts are in English because AI tools follow English best; add 'Reply in simple Gujarati' at the end of a ChatGPT, Claude or Gemini text prompt if you want the answer in Gujarati.","પીળા [LIKE THIS] શબ્દો તમારે બદલવાના છે. AI ટૂલ અંગ્રેજી સૌથી સારી રીતે સમજે છે તેથી પ્રૉમ્પ્ટ અંગ્રેજીમાં છે; જવાબ ગુજરાતીમાં જોઈએ તો ChatGPT, Claude કે Gemini ના પ્રૉમ્પ્ટના અંતે 'Reply in simple Gujarati' ઉમેરો."],
+ pchain:["Try these chains: ChatGPT Hindi lyrics, then Suno music. ChatGPT business idea, then Gamma pitch deck. ChatGPT resume text, then Canva resume. ChatGPT job research, then a Lovable job tracker.","આ ક્રમ અજમાવો: ChatGPT માં હિન્દી ગીત, પછી Suno માં સંગીત. ChatGPT માં બિઝનેસ આઇડિયા, પછી Gamma માં પિચ ડેક. ChatGPT માં રેઝ્યૂમે લખાણ, પછી Canva માં રેઝ્યૂમે. ChatGPT માં નોકરી સંશોધન, પછી Lovable માં જૉબ ટ્રૅકર."],
+ pcheck:["AI can make mistakes. Check facts, dates, salaries and links before you trust them, and never pay money to get a job.","AI ભૂલ કરી શકે છે. વિશ્વાસ કરતા પહેલાં હકીકત, તારીખ, પગાર અને લિંક ચકાસો, અને નોકરી મેળવવા ક્યારેય પૈસા ન ચૂકવો."],
+ pmore:["More practice material from TICL Academy:","TICL એકેડેમીની વધુ પ્રૅક્ટિસ સામગ્રી:"],
+ promoP:["New: Prompt Library. {n} copy-ready prompts for ChatGPT, Gemini, Claude, Suno, Gamma, Canva and more","નવું: પ્રૉમ્પ્ટ લાઇબ્રેરી. ChatGPT, Gemini, Claude, Suno, Gamma, Canva અને વધુ માટે {n} તૈયાર પ્રૉમ્પ્ટ"],
  foot:["<b>TICL Academy AI Times</b> is written and edited by <b>Kevin Parekh</b> for the students of <a href='https://academy.ticl.in' target='_blank' rel='noopener'>TICL Academy</a>, Bhavnagar, Gujarat. Every summary is written in our own words; follow the Read more link for the original report. News compiled on 16 and 17 November 2026. Figures reported by companies are their own claims.","<b>TICL એકેડેમી AI ટાઇમ્સ</b> ના લેખક અને તંત્રી <b>કેવિન પારેખ</b> છે, <a href='https://academy.ticl.in' target='_blank' rel='noopener'>TICL એકેડેમી</a>, ભાવનગર, ગુજરાતના વિદ્યાર્થીઓ માટે. દરેક સારાંશ અમારા પોતાના શબ્દોમાં છે; મૂળ અહેવાલ માટે 'વધુ વાંચો' લિંક ખોલો. સમાચાર 16 અને 17 નવેમ્બર 2026 ના રોજ સંકલિત. કંપનીઓએ આપેલા આંકડા તેમના પોતાના દાવા છે."]
 };
 var LEADS = ["G1","I1","G5","A1","U9","G8","A3","G24","D1"];
@@ -633,7 +1223,7 @@ function front(){
   var h = '<section class="front"><div class="lead">' + story(byId(LEADS[0]), {tag:"h2", wrap:true}) + '<div class="sub">' + SUBS.map(function(id){return story(byId(id));}).join("") + '</div></div><aside class="rail"><h4>' + u("top") + '</h4>';
   LEADS.slice(1).forEach(function(id){ h += story(byId(id), {brief:true}); });
   h += '</aside></section>';
-  h += '<div class="promo"><a class="hl-y" href="#youtube">' + esc(u("promoY").replace("{n}", YT.length)) + ' &rarr;</a><a class="hl-w" href="#websites">' + esc(u("promoW").replace("{n}", WEB.length)) + ' &rarr;</a></div>';
+  h += '<div class="promo"><a class="hl-p" href="#prompts">' + esc(u("promoP").replace("{n}", PROMPTS.length)) + ' &rarr;</a><a class="hl-y" href="#youtube">' + esc(u("promoY").replace("{n}", YT.length)) + ' &rarr;</a><a class="hl-w" href="#websites">' + esc(u("promoW").replace("{n}", WEB.length)) + ' &rarr;</a></div>';
   SECS.slice(1).forEach(function(s){
     if (!s.p) return;
     var items = inSec(s.p).filter(function(n){return LEADS.indexOf(n[0]) < 0 && SUBS.indexOf(n[0]) < 0;}).slice(0,4);
@@ -695,6 +1285,42 @@ function websites(s){
   });
   return h + judgeBox();
 }
+var ptool = "all";
+function ptoolOf(k){ for (var i=0;i<PTOOLS.length;i++) if (PTOOLS[i][0]===k) return PTOOLS[i]; }
+function marked(t){ return esc(t).replace(/\[[A-Z0-9][A-Z0-9 ,.\/&'()+:-]*\]/g, function(m){ return '<mark>' + m + '</mark>'; }); }
+function prompts(s){
+  var h = '<div class="pagehead ph-p"><h2>' + esc(nm(s)) + '</h2><p>' + esc(L?s.igu:s.ien) + '</p></div>';
+  h += '<div class="ptips"><p>' + u("ptip").replace("[LIKE THIS]", "<mark>[LIKE THIS]</mark>") + '</p><p>' + u("pchain") + '</p><p><b>' + u("pcheck") + '</b></p><p>' + u("pmore") + ' <a href="https://material.ticl.in/" target="_blank" rel="noopener">material.ticl.in</a> | <a href="https://academy.ticl.in" target="_blank" rel="noopener">academy.ticl.in</a></p></div>';
+  h += '<div class="chips"><button class="chip' + (ptool==="all"?" on":"") + '" data-ptool="all">' + u("allTools") + ' (' + PROMPTS.length + ')</button>';
+  PTOOLS.forEach(function(t){ var n = PROMPTS.filter(function(p){return p[0]===t[0];}).length; h += '<button class="chip' + (ptool===t[0]?" on":"") + '" data-ptool="' + t[0] + '" style="--c:' + t[3] + '">' + t[1] + ' (' + n + ')</button>'; });
+  h += '</div>';
+  PTOOLS.forEach(function(t){
+    if (ptool !== "all" && ptool !== t[0]) return;
+    var list = []; PROMPTS.forEach(function(p,i){ if (p[0]===t[0]) list.push(i); });
+    h += '<section class="psec" style="--c:' + t[3] + '"><div class="ptoolhead"><h2>' + t[1] + ' <span>' + list.length + ' ' + u("prompts") + '</span></h2><a class="btn" style="background:' + t[3] + '" href="' + t[2] + '" target="_blank" rel="noopener">' + u("openTool") + ' ' + t[1] + ' &rarr;</a></div><p class="phow"><b>' + u("howUse") + ':</b> ' + esc(t[4+L]) + '</p>';
+    var lastCat = "";
+    list.forEach(function(i, k){
+      var p = PROMPTS[i];
+      if (p[1] !== lastCat) { if (lastCat) h += '</div>'; lastCat = p[1]; h += '<h3 class="pcat">' + PCATS[p[1]][L] + '</h3><div class="pgrid">'; }
+      var id = t[6] + "-" + (k+1 < 10 ? "0" : "") + (k+1);
+      h += '<article class="pcard" id="' + id + '"><div class="ptop"><span class="pid">' + id + '</span><span class="ptl">' + t[1] + '</span></div><h4>' + esc(p[2+L]) + '</h4><pre class="ptext">' + marked(p[4]) + '</pre>' + (p[5] ? '<p class="pnote">' + esc(L ? p[6] : p[5]) + '</p>' : '') + '<div class="pact"><button class="copy" data-copy="' + i + '">&#128203; ' + u("copy") + '</button><a class="more" href="' + t[2] + '" target="_blank" rel="noopener">' + u("openTool") + ' ' + t[1] + ' &rarr;</a></div></article>';
+    });
+    if (lastCat) h += '</div>';
+    h += '</section>';
+  });
+  return h;
+}
+function copyText(t, btn){
+  function done(){ var old = btn.innerHTML; btn.innerHTML = "&#10003; " + u("copied"); btn.classList.add("ok"); setTimeout(function(){ btn.innerHTML = old; btn.classList.remove("ok"); }, 1600); }
+  function fallback(){ var ta = document.createElement("textarea"); ta.value = t; ta.setAttribute("readonly",""); ta.style.position="fixed"; ta.style.top="-1000px"; document.body.appendChild(ta); ta.select(); try { document.execCommand("copy"); } catch(e) {} document.body.removeChild(ta); done(); }
+  if (navigator.clipboard && window.isSecureContext) { navigator.clipboard.writeText(t).then(done, fallback); } else { fallback(); }
+}
+document.getElementById("main").addEventListener("click", function(e){
+  var b = e.target.closest("[data-copy]");
+  if (b) { copyText(PROMPTS[+b.getAttribute("data-copy")][4], b); return; }
+  var c = e.target.closest("[data-ptool]");
+  if (c) { ptool = c.getAttribute("data-ptool"); render(); var ch = document.querySelector(".chips"); if (ch) ch.scrollIntoView({block:"start"}); }
+});
 function search(q){
   q = q.toLowerCase();
   var hits = NEWS.filter(function(n){ return (n[4]+" "+n[5]+" "+n[6]+" "+n[7]+" "+n[2]+" "+(n[8]?n[8][0]:"")).toLowerCase().indexOf(q) >= 0; });
@@ -723,7 +1349,7 @@ function render(){
   var q = document.getElementById("q").value.trim();
   document.getElementById("nav").innerHTML = SECS.map(function(s){ return '<a href="#' + s.k + '" class="' + (s.hl||"") + (!q && s.k === page ? ' on' : '') + '">' + esc(nm(s)) + '</a>'; }).join("");
   var cur = SECS.filter(function(s){return s.k === page;})[0] || SECS[0];
-  document.getElementById("main").innerHTML = q ? search(q) : (cur.k === "front" ? front() : cur.k === "youtube" ? youtube(cur) : cur.k === "websites" ? websites(cur) : section(cur));
+  document.getElementById("main").innerHTML = q ? search(q) : (cur.k === "front" ? front() : cur.k === "prompts" ? prompts(cur) : cur.k === "youtube" ? youtube(cur) : cur.k === "websites" ? websites(cur) : section(cur));
 }
 function route(){
   page = (location.hash || "#front").slice(1);
